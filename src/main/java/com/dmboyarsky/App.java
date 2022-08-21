@@ -1,5 +1,6 @@
 package com.dmboyarsky;
 
+import com.dmboyarsky.games.Even;
 import java.util.Scanner;
 
 public class App {
@@ -10,7 +11,7 @@ public class App {
         System.out.println("\nYour choice: " + choice + "\n");
         switch (choice) {
             case "1" -> Cli.greeting();
-            case "2" -> System.out.println("2 - Even");
+            case "2" -> Even.run();
             case "3" -> System.out.println("3 - Calc");
             case "4" -> System.out.println("4 - GCD");
             case "5" -> System.out.println("5 - Progression");
