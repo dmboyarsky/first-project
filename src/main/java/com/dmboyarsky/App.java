@@ -16,7 +16,7 @@ public class App {
             case "5" -> System.out.println("5 - Progression");
             case "6" -> System.out.println("6 - Prime");
             case "0" -> System.out.println("See you again!");
-            default -> System.out.println("Your choice is incorrect, please try again");
+            default -> System.out.println("Your choice is incorrect, please try again!");
         }
     }
 
