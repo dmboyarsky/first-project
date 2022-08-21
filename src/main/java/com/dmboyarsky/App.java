@@ -4,6 +4,7 @@ import com.dmboyarsky.games.Even;
 import com.dmboyarsky.games.Calc;
 import com.dmboyarsky.games.GCD;
 import com.dmboyarsky.games.Progression;
+import com.dmboyarsky.games.Prime;
 import java.util.Scanner;
 
 public class App {
@@ -18,7 +19,7 @@ public class App {
             case "3" -> Calc.run();
             case "4" -> GCD.run();
             case "5" -> Progression.run();
-            case "6" -> System.out.println("6 - Prime");
+            case "6" -> Prime.run();
             case "0" -> System.out.println("See you again!");
             default -> System.out.println("Your choice is incorrect, please try again!");
         }
