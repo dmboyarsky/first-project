@@ -1,0 +1,23 @@
+plugins {
+    id 'com.github.ben-manes.versions' version '0.39.0'
+    id 'application'
+}
+
+group 'com.dmboyarsky'
+version '1.0-SNAPSHOT'
+
+application {
+    mainClass = 'com.dmboyarsky.App'
+}
+
+repositories {
+    mavenCentral()
+}
+
+run {
+    standardInput = System.in
+}
+
+compileJava {
+    options.release = 17
+}
