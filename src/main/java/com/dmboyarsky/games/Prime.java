@@ -5,7 +5,8 @@ import com.dmboyarsky.Utils;
 
 public class Prime {
 
-    private static final String CONDITION_GAME = "Answer 'yes' if given number is prime. Otherwise answer 'no'";
+    private static final String CONDITION_GAME
+            = "Answer 'yes' if given number is prime. Otherwise answer 'no'";
     private static final int MAX_NUMBER = 100;
     private static final int MIN_NUMBER = 2;
 
@@ -20,7 +21,7 @@ public class Prime {
         Engine.run(CONDITION_GAME, new String[][] {questions, answers});
     }
 
-    private static boolean isPrime(int number) {
+    private static boolean isPrime(final int number) {
         if (number == 2) {
             return true;
         } else if (number % 2 == 0) {

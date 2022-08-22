@@ -5,7 +5,8 @@ import com.dmboyarsky.Utils;
 
 public class Even {
 
-    private static final String CONDITION_GAME = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+    private static final String CONDITION_GAME =
+            "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
     public static void run() {
         String[] questions = new String[Engine.ROUNDS];

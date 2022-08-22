@@ -8,8 +8,12 @@ public class Engine {
     private static final int LINE_OF_QUESTIONS = 0;
     private static final int LINE_OF_ANSWERS = 1;
 
-    public static void run(String rules, String[][] questionsAndAnswers) {
-        System.out.println("Welcome to the Brain Games!\nMay I have your name?\n");
+    public static void run(final String rules,
+                           final String[][] questionsAndAnswers) {
+        System.out.println("""
+                Welcome to the Brain Games!
+                May I have your name?
+                """);
         Scanner scanner = new Scanner(System.in);
         String playerName = scanner.nextLine();
         System.out.println("\nHello, " + playerName + "!\n");
@@ -20,8 +24,10 @@ public class Engine {
             System.out.println("Question: " + question);
             String playerAnswer = getAnswer();
             if (!answer.equals(playerAnswer)) {
-                System.out.println("\n" + "'" + playerAnswer + "' is wrong answer. Correct answer was '"
-                        + answer + "'.\nLet's try again, " + playerName + "!");
+                System.out.println("\n" + "'" + playerAnswer
+                        + "' is wrong answer. Correct answer was '"
+                        + answer + "'.\nLet's try again, "
+                        + playerName + "!");
                 return;
             }
             System.out.println("Correct!\n");

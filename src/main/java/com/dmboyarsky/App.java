@@ -8,7 +8,7 @@ import com.dmboyarsky.games.Prime;
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         printGames();
         Scanner scanner = new Scanner(System.in);
         String choice = scanner.nextLine();
@@ -21,7 +21,8 @@ public class App {
             case "5" -> Progression.run();
             case "6" -> Prime.run();
             case "0" -> System.out.println("See you again!");
-            default -> System.out.println("Your choice is incorrect, please try again!");
+            default -> System.out.println(
+                    "Your choice is incorrect, please try again!");
         }
     }
 
