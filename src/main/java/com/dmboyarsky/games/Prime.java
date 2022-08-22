@@ -32,7 +32,7 @@ public class Prime {
                 if (number % i == 0) {
                     return false;
                 }
-                i += -1;
+                i -= 1;
             }
             return true;
         }
